@@ -1,0 +1,5 @@
+{
+  "destination": "<destination_ip_to_ping>",
+  "interface": "<interface_id>",
+  "status_url": "<link_to_api_url>"
+}
