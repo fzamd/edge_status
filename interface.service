@@ -1,0 +1,13 @@
+[unit]
+Description=Service to run interface status script
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/python <folder_path>/interface_status.py -c <path_to_interface_config>
+ExecReload=/bin/kill -HUP $MANPID
+KillMode=process
+Restart=always
+RestartSec=60s
+
+[Install]
+WantedBy=default.target
