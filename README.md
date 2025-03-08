@@ -9,3 +9,8 @@ This repo cotains scripts and instructions to create a job in edge router to pin
 - Run the script, check if the status is being correctly registered
 - To run the script repeatedly, either create a systemctl service or a cron
 - Adjust frequency of job as needed
+
+# Systemctl setup
+- Use the systemctl.service template config provided and create a service file
+- Use command to enable the service `sudo systemctl enable <service-file-name>.service`, this auto starts the service during restart
+- Use commadnn to start it `sudo systemctl start <service-file-name>.service`
